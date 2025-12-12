@@ -285,7 +285,7 @@ display: flex;
 align-items: flex-end;
 justify-content: space-between;
 position: relative;
-margin-bottom: 250px;
+margin-bottom: 200px;
 }
 
 .about_creatix::before{
@@ -365,6 +365,7 @@ color: rgba(30, 33, 44, 1);
  width: 100%;
  height: 100%;
  object-fit: cover;
+ border-radius: 4px;
 
 }
 
@@ -397,4 +398,44 @@ color: rgba(30, 33, 44, 1);
  font-weight: 900;
  line-height: 130%;
  letter-spacing: 1px;
+}
+
+/*====================================================*/
+.directions {
+}
+
+.directions_inner {
+}
+.directions_heading {
+}
+
+.heading_subtitle {
+}
+.heading_title {
+}
+.directions_body {
+}
+.directions_filter-box {
+}
+.directions_filter-item {
+}
+.directions_filter-btn {
+}
+.directions_list {
+}
+.directions_list-items {
+}
+.directions_list-link {
+}
+.directions_img-box {
+}
+.directions_link-content {
+}
+.directions_link-tag {
+}
+.directions_link-text {
+}
+.directions_link-btn {
+}
+.directions_list-items--empty {
 }
