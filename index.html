@@ -184,7 +184,7 @@
             <section class="directions">
                 <div class="container">
                     <div class="directions_inner">
-                        <div class="directions_heading hending">
+                        <div class="directions_heading heading heading_text-center">
                             <p class="heading_subtitle">our main directions</p>
                             <h2 class="heading_title">What do we teach</h2>
                         </div>
@@ -192,18 +192,35 @@
                         <div class="directions_body">
                             <ul class="directions_filter-box">
                                 <li class="directions_filter-item">
-                                    <button class="directions_filter-btn" type="button">All</button>
-                                    <button class="directions_filter-btn" type="button">Development</button>
-                                    <button class="directions_filter-btn" type="button">Marketing</button>
-                                    <button class="directions_filter-btn" type="button">Management</button>
-                                    <button class="directions_filter-btn" type="button">HR & Recruting</button>
-                                    <button class="directions_filter-btn" type="button">Design</button>
+                                    <button class="directions_filter-btn directions_filter-btn" type="button"
+                                        data-filter=".directions_list-items">All</button>
                                 </li>
+                                <li class="directions_filter-item">
+                                    <button class="directions_filter-btn" type="button"
+                                        data-filter=".directions_list-items--development">Development</button>
+                                </li>
+                                <li class="directions_filter-item">
+                                    <button class="directions_filter-btn" type="button"
+                                        data-filter=".directions_list-items--marketing">Marketing</button>
+                                </li>
+                                <li class="directions_filter-item">
+                                    <button class="directions_filter-btn" type="button"
+                                        data-filter=".directions_list-items--management">Management</button>
+                                </li>
+                                <li class="directions_filter-item">
+                                    <button class="directions_filter-btn" type="button"
+                                        data-filter=".directions_list-items--hr">HR & Recruting</button>
+                                </li>
+                                <li class="directions_filter-item">
+                                    <button class="directions_filter-btn" type="button"
+                                        data-filter=".directions_list-items--design">Design</button>
+                                </li>
+
                             </ul>
 
                             <ul class="directions_list">
-                                <li class="directions_list-items">
-                                    <a class="directions_list-link">
+                                <li class=" mix directions_list-items directions_list-items--marketing" data-order="1">
+                                    <a class="directions_list-link" href="">
                                         <div class="directions_img-box">
                                             <img src="/creatix/img/picture/image2.png" alt="">
                                         </div>
@@ -216,8 +233,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="directions_list-items">
-                                    <a class="directions_list-link">
+                                <li class=" mix directions_list-items directions_list-items--management" data-order="2">
+                                    <a class="directions_list-link" href="">
                                         <div class="directions_img-box">
                                             <img src="/creatix/img/picture/image3.png" alt="">
                                         </div>
@@ -230,8 +247,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="directions_list-items">
-                                    <a class="directions_list-link">
+                                <li class=" mix directions_list-items directions_list-items--hr" data-order="3">
+                                    <a class="directions_list-link" href="">
                                         <div class="directions_img-box">
                                             <img src="/creatix/img/picture/image4.png" alt="">
                                         </div>
@@ -244,8 +261,8 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="directions_list-items">
-                                    <a class="directions_list-link">
+                                <li class=" mix directions_list-items directions_list-items--design" data-order="4">
+                                    <a class="directions_list-link" href="">
                                         <div class="directions_img-box">
                                             <img src="/creatix/img/picture/image5.png" alt="">
                                         </div>
@@ -258,8 +275,9 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="directions_list-items">
-                                    <a class="directions_list-link">
+                                <li class=" mix directions_list-items directions_list-items--development"
+                                    data-order="5">
+                                    <a class="directions_list-link" href="">
                                         <div class="directions_img-box">
                                             <img src="/creatix/img/picture/image6.png" alt="">
                                         </div>
@@ -272,8 +290,10 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="directions_list-items directions_list-items--empty">
-                                   New studying program coming soon...
+                                <li class=" mix directions_list-items directions_list-items--empty" data-order="6">
+                                    <span>
+                                        New studying program coming soon...
+                                    </span>
                                 </li>
                             </ul>
 
@@ -287,7 +307,7 @@
 
     </div>
 </body>
-<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
 <script src="/creatix//js/main.js"></script>
 <script src="/creatix//js/mixitup.min.js"></script>
