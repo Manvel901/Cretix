@@ -21,6 +21,17 @@ a{
 
 }
 
+.main_aboutAs{
+padding: 180px 0 160px 0;
+}
+
+.main_directions{
+padding: 180px 0 160px 0;
+}
+
+.main_cert{
+    padding-bottom: -50px;
+}
 .button{
     text-align: center;
     display: inline-block;
@@ -273,9 +284,10 @@ margin-right: 12px;
 
 /*----------------------------------------------------------------*/
 .main {
+   
 }
 .aboutAs {
-    padding: 180px 0 160px 0;
+   
     
 }
 
@@ -406,7 +418,7 @@ color: rgba(30, 33, 44, 1);
 
 /*====================================================*/
 .directions {
-  padding-bottom: 180px;
+ 
 }
 
 .directions_inner {
@@ -591,4 +603,59 @@ border-radius: 4px;
 .directions_list-items--empty span{
     max-width: 242px;
     max-height: 60px;
+}
+
+
+/*===============================================================*/
+
+.cert {
+}
+.cert_inner{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.cert_content {
+    margin-right: 30px;
+    max-width: 400px;
+
+}
+.cert_heading {
+    margin-bottom: 50px;
+}
+.cert_text {
+    margin-bottom: 30px;
+}
+.cert_logos {
+    list-style-type: none;
+    display: flex;
+    margin-top: -440px;
+    
+   width: 397px;
+  height: 334px;
+  justify-content: flex-start;
+ align-items: center;
+ margin-left: -45px;
+}
+.cert_logos-item {
+    margin-right: 40px;
+}
+
+.cert_logos-item:last-child{
+    margin-right: 0;
+}
+
+.cert_image-box {
+
+}
+
+.cert_inner::before{
+     content: "";
+    position: absolute;
+    top: -15px;
+    left: -100px;
+    display: block;
+    background: url(/creatix/img/icons/shapes2.svg);
+    width: 60px;
+height: 60px;
 }
