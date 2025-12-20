@@ -32,6 +32,12 @@ padding: 180px 0 160px 0;
 .main_cert{
     padding-bottom: -50px;
 }
+
+.main_team {
+  padding: 160px 0 180px 0;;
+}
+
+
 .button{
     text-align: center;
     display: inline-block;
@@ -606,6 +612,7 @@ border-radius: 4px;
 }
 
 
+
 /*===============================================================*/
 
 .cert {
@@ -658,4 +665,274 @@ border-radius: 4px;
     background: url(/creatix/img/icons/shapes2.svg);
     width: 60px;
 height: 60px;
+}
+
+/*=========================================================*/
+.team {
+    padding: 80px 0;
+}
+
+.team_inner {
+}
+
+.team_heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Контейнер слайдера */
+.team_slider {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 60px; /* Добавляем отступы для стрелок */
+}
+
+/* Список слайдов */
+.team_slider .slick-list {
+    overflow: hidden;
+    margin: 0 -15px;
+}
+
+/* Дорожка слайдов */
+.team_slider .slick-track {
+    display: flex;
+    align-items: stretch; /* Выравниваем по высоте */
+}
+
+/* Каждый слайд */
+.team_slide {
+    padding: 0 15px;
+    height: auto;
+    display: flex; /* Добавляем flex для растягивания */
+}
+
+/* Внутренний контейнер слайда */
+.team_slider_inner {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%;
+    width: 100%; /* Занимает всю ширину */
+    display: flex;
+    flex-direction: column;
+}
+
+.team_slide:hover .team_slider_inner {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Стили для изображения - УВЕЛИЧИВАЕМ ВЫСОТУ */
+.team_image-box {
+    border-radius: 4px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1; /* Растягиваем изображение */
+}
+
+.team_image {
+    position: relative;
+    height: 420px; /* Увеличиваем высоту с 340px до 420px */
+    width: 100%;
+}
+
+.team_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team_slide:hover .team_image img {
+    transform: scale(1.05);
+}
+
+/* Социальные иконки - ПЕРЕМЕЩАЕМ ВПРАВО */
+.team_socials {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; /* Меняем с flex-start на flex-end */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background: linear-gradient(180deg, 
+        rgba(30, 33, 44, 0) 44%, 
+        rgba(30, 33, 44, 0.03) 55%, 
+        rgba(30, 33, 44, 0.33) 69%, 
+        rgba(30, 33, 44, 0.56) 76%, 
+        rgba(30, 33, 44, 0.77) 84%, 
+        rgba(30, 33, 44, 0.92) 91%, 
+        rgba(30, 33, 44, 1) 100%);
+    transform: translateY(50%);
+    transition: transform 0.3s ease, 
+                background 0.3s ease; /* Добавляем переход для фона */
+    margin: 0;
+}
+
+.team_slide:hover .team_socials {
+    transform: translateY(0%);
+    background: linear-gradient(180deg, 
+        rgba(30, 33, 44, 0) 0%, 
+        rgba(30, 33, 44, 0.2) 40%, 
+        rgba(30, 33, 44, 0.5) 70%, 
+        rgba(30, 33, 44, 0.8) 90%, 
+        rgba(30, 33, 44, 1) 100%); /* Делаем градиент ярче при наведении */
+}
+
+/* Социальные иконки становятся ярче при наведении */
+.team_socials img {
+    width: 84px;
+    height: 20px;
+    opacity: 0.8; /* Начальная прозрачность */
+    transition: opacity 0.3s ease, 
+                filter 0.3s ease; /* Добавляем переходы */
+    filter: brightness(0.9); /* Немного приглушаем */
+}
+
+.team_slide:hover .team_socials img {
+    opacity: 1; /* Полная непрозрачность при наведении */
+    filter: brightness(1.2); /* Делаем ярче при наведении */
+}
+
+/* Отдельная иконка соцсети при наведении */
+.team_socials-link:hover img {
+    filter: brightness(1.5) contrast(1.2); /* Еще ярче при наведении на конкретную иконку */
+    transform: scale(1.05); /* Легкое увеличение */
+}
+
+.team_socials-item {
+    margin-right: 12px;
+}
+
+.team_socials-item:last-child {
+    margin-right: 0;
+}
+
+/* Информация о команде */
+.team_info {
+    padding: 16px 0;
+    flex-shrink: 0; /* Чтобы не сжимался */
+}
+
+.team_info-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 4px;
+}
+
+.team_info-possition {
+    color: rgba(120, 122, 128, 1);
+    font-size: 14px;
+}
+
+/* СТРЕЛКИ СЛАЙДЕРА - ВНУТРИ КОНТЕЙНЕРА */
+.team_slider .slick-prev,
+.team_slider .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.team_slider .slick-prev:hover,
+.team_slider .slick-next:hover {
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Позиционируем стрелки внутри контейнера */
+.team_slider .slick-prev {
+    left: 10px; /* Вместо -50px */
+}
+
+.team_slider .slick-next {
+    right: 10px; /* Вместо -50px */
+}
+
+/* Иконки стрелок */
+.team_slider .slick-prev:before,
+.team_slider .slick-next:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: solid #333;
+    border-width: 2px 2px 0 0;
+}
+
+.team_slider .slick-prev:before {
+    transform: rotate(-135deg);
+    margin-left: 3px;
+}
+
+.team_slider .slick-next:before {
+    transform: rotate(45deg);
+    margin-right: 3px;
+}
+
+.team_info{
+    display: block;
+    align-items: center;
+}
+.team_info-name{
+  text-align: center;
+}
+.team_info-possition{
+text-align: center;
+}
+
+/* Адаптивность для стрелок */
+@media (max-width: 1200px) {
+    .team_slider {
+        padding: 0 40px;
+    }
+    
+    .team_image {
+        height: 380px; /* Немного меньше на планшетах */
+    }
+}
+
+@media (max-width: 768px) {
+    .team_slider {
+        padding: 0 20px;
+    }
+    
+    .team_slider .slick-prev {
+        left: 5px;
+    }
+    
+    .team_slider .slick-next {
+        right: 5px;
+    }
+    
+    .team_slider .slick-prev,
+    .team_slider .slick-next {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .team_image {
+        height: 300px; /* Еще меньше на мобильных */
+    }
 }
