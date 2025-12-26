@@ -56,4 +56,9 @@ $(document).ready(function(){
         ]
     });
 });
+
+// $(document).ready(function(){
+//     $('.testi_slider').slick({
+//             });
+// });
   
